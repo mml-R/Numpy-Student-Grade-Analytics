@@ -2,7 +2,7 @@ import numpy as np
 from generator import *
 from operations import *
 
-
+np.set_printoptions(precision=2)
 while True:
     main_page = input("1-Generate array 2-Exit: ")
     match main_page:
