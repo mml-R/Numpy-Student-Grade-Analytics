@@ -1,6 +1,6 @@
 import numpy as np
-from generator.py import *
-from operations.py import *
+from generator import *
+from operations import *
 
 
 while True:
@@ -29,28 +29,28 @@ while True:
 
                     case "5":
                         course_name = input("Enter the name of the course(math,physics,english,avg): ")
-                        if course_name.lower() in AVAILABEL_COURSES:
+                        if course_name.lower() in AVAILABLE_COURSES:
                             print(f"{avg_of_each_course(students,course_name):.2f}")
                         else:
                             print("Invalid input.\nAvailable courses: math , physics , english , avg")
                         
                     case "6":
                         course_name = input("Enter the name of the course(math,physics,english,avg): ")
-                        if course_name.lower() in AVAILABEL_COURSES:
+                        if course_name.lower() in  AVAILABLE_COURSES:
                             print(sort_by_score(students,course_name))
                         else:
                             print("Invalid input.\nAvailable courses: math , physics , english , avg")
 
                     case "7":
                         course_name = input("Enter the name of the course(math,physics,english,avg): ")
-                        if course_name.lower() in AVAILABEL_COURSES:
+                        if course_name.lower() in  AVAILABLE_COURSES:
                             print(normalize_score(students,course_name))
                         else:
                             print("Invalid input.\nAvailable courses: math , physics , english , avg")
 
                     case "8":
                         course_name = input("Enter the name of the course(math,physics,english,avg): ")
-                        if course_name.lower() in AVAILABEL_COURSES:
+                        if course_name.lower() in  AVAILABLE_COURSES:
                             found = best_student(students,course_name)
                             print_student(found)
                         else:
@@ -58,7 +58,7 @@ while True:
 
                     case "9":
                         course_name = input("Enter the name of the course(math,physics,english,avg): ")
-                        if course_name.lower() in AVAILABEL_COURSES:
+                        if course_name.lower() in  AVAILABLE_COURSES:
                             found = worst_student(students,course_name)
                             print_student(found)
                         else:
