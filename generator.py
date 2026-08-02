@@ -5,7 +5,7 @@ student_type = np.dtype([('id',int),('age',int),
                          ('math',float),('physics',float),('english',float),('avg',float)])
 
 
- AVAILABLE_COURSES = ["math","physics","english","avg"]
+AVAILABLE_COURSES = ["math","physics","english","avg"]
 
 def generate_array(length):
 
