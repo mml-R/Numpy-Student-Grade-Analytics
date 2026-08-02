@@ -1,5 +1,5 @@
 import numpy as np
-from generator.py import *
+from generator import *
 
 def show_top_ten(array):
 
