@@ -112,7 +112,7 @@ def search_by_id(array,id):
     mask = array['id'] == id
     
     if np.any(mask):
-        return array[mask][0]#Why student[0] and not student?
+        return array[mask][0]
 
     return None
 
